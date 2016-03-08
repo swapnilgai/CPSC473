@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+
+    <script type="text/javascript" src="homework3.js"></script>
+
+    <script type="text/javascript">
+      
+    var array1 = [2,8,6,4,5];
+    var sum;
+    var array2 = ["a","b","f","c","a"];
+    var charToSearch='c';
+
+    function findMaxHtml(){
+    document.getElementById('findMaxHtml').innerHTML = findMax(array1);
+    }
+
+    function arrayAverageHtml(){
+    document.getElementById('arrayAverageHtml').innerHTML = arrayAverage(array1);
+    }
+
+    function arrayEvenHtml(){
+    document.getElementById('arrayEvenHtml').innerHTML = arrayEven(array1);
+    }
+
+    function everyEvenHtml() {
+    document.getElementById('everyEvenHtml').innerHTML = everyEven(array1);
+    }
+
+    function objContainHtml(){
+    document.getElementById('objContainHtml').innerHTML =  objContain(array2, charToSearch);
+    }
+
+    function multipleOcceranceHtml(){
+    document.getElementById('multipleOcceranceHtml').innerHTML = multipleOccerance(array2,charToSearch);
+    }
+
+    window.addEventListener("load", function(e) {
+
+   
+    findMaxHtml();
+    arrayAverageHtml();
+    arrayEvenHtml();
+    everyEvenHtml();
+    objContainHtml();
+    multipleOcceranceHtml();
+
+    });
+
+
+    window.onload = function() {
+      
+        var averageResult = exercise1([1,2,3,4]);
+        var avg = document.getElementById('avg');
+        avg.innerHTML += averageResult;
+
+        var largestNumber = exercise2([1,2,3,4]);
+        var lar = document.getElementById('lar');
+        lar.innerHTML = lar.innerHTML + largestNumber;
+
+        var evenNumber = exercise3([1,2,3,4]);
+        var evenNo = document.getElementById('evenNo');
+        evenNo.innerHTML = evenNo.innerHTML + evenNumber;
+
+        var allEvenNumber = exercise4([2,2,2,4]);
+        var allEvenNo = document.getElementById('allEvenNo');
+        allEvenNo.innerHTML = allEvenNo.innerHTML + allEvenNumber;
+
+        var arrContains = arrayContains(["hello", "world", "goodbye"], "goodbye");
+        var arrCont = document.getElementById('arrContains');
+        arrCont.innerHTML = arrCont.innerHTML + arrContains;
+       
+        var arrContainsTwo = arrayContainsTwo(["a","b","a","c"], "a");
+        var arrContTwice = document.getElementById('arrContainsTwice');
+        arrContTwice.innerHTML = arrContTwice.innerHTML + arrContainsTwo;
+
+        var arrContainsThree = arrayContainsThree(["a","b","a","a"], "a");
+        var arrContThrice = document.getElementById('arrContainsThrice');
+        arrContThrice.innerHTML = arrContThrice.innerHTML + arrContainsThree;
+
+        var arrContainsNTimes = arrayContainsNTimes(["a","b","a","a"], "a", 3);
+        var arrContNtimes = document.getElementById('arrContainsNtimes');
+        arrContNtimes.innerHTML = arrContNtimes.innerHTML + arrContainsNTimes;
+
+
+      }
+
+    </script>
+
+  </head>
+
+  <body>
+  
+    <div id="avg"> Average result: </div> <br>
+    <div id="lar"> Largest Number result: </div> <br>
+    <div id="evenNo"> Even No result: </div> <br>
+    <div id="allEvenNo"> All Even No result: </div> <br>
+    <div id="arrContains"> Array contains result: </div> <br>
+    <div id="arrContainsTwice"> Array contains Twice result: </div> <br>
+    <div id="arrContainsThrice"> Array contains Thrice result: </div> <br>
+    <div id="arrContainsNtimes"> Array contains Ntimes result: </div> <br>
+
+
+    <h1> Using underscore.js</h1>
+    #Question 1 :
+    Max is : <div id="findMaxHtml" > </div></br>
+
+    #Question 2 :
+    Avg is :  <div id="arrayAverageHtml"> </div></br>
+
+    #Question 3 :
+    Single even : <div id="arrayEvenHtml">   </div></br>
+
+    #Question 4 :
+    Every even : <div id="everyEvenHtml"> </div></br>
+
+    #Question 5 :
+    Contains object :  <div id="objContainHtml">  </div></br>
+
+    #Question 6 :
+    Contains multiple time :  <div id="multipleOcceranceHtml">  </div></br>
+
+  
+  </body>
+
+</html>
