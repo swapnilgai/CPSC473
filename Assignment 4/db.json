@@ -1,0 +1,44 @@
+{
+  "actors": [
+    {
+      "name": "Bryan Cranston",
+      "starred": false,
+      "id": 1
+    },
+    {
+      "name": "Aaron Paul",
+      "starred": false,
+      "id": 2
+    },
+    {
+      "name": "Bob Odenkirk",
+      "starred": true,
+      "id": 3
+    },
+    {
+      "name": "Dean Norris",
+      "starred": true,
+      "id": 4
+    },
+    {
+      "name": "shanky",
+      "starred": true,
+      "id": 5
+    },
+    {
+      "name": "shankar",
+      "starred": false,
+      "id": 6
+    },
+    {
+      "name": "swapnil",
+      "starred": true,
+      "id": 7
+    },
+    {
+      "name": "venky",
+      "starred": false,
+      "id": 8
+    }
+  ]
+}
